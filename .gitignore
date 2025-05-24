@@ -1,0 +1,37 @@
+# === Build Artifacts ===
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# === Conan Artifacts ===
+conan.lock
+conanbuild/
+conanexport/
+conan_package.tgz
+graph_info.json
+
+# === Compiled Binaries ===
+*.exe
+*.out
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+
+# === VS Code & Other IDEs ===
+.vscode/
+.idea/
+*.user
+*.suo
+
+# === Logs, temp, and system ===
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/volatile/Desktop/pc-devel/time_keeper/proj_src/build/CMakePresets.json"
+    ]
+}
