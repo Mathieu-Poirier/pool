@@ -7,13 +7,10 @@ include(${CMAKE_BINARY_DIR}/conan_toolchain.cmake)
 # === Dependencies ===
 find_package(GTest REQUIRED)
 
-# === Internal Library ===
-add_library(poollib src/createdlibs/poollib.cpp)
-target_include_directories(poollib PUBLIC ${CMAKE_SOURCE_DIR}/include)
-set_target_properties(poollib PROPERTIES
-    CXX_STANDARD 23
-    CXX_STANDARD_REQUIRED YES
-)
+# === Internal Header-Only Library ===
+add_library(poollib INTERFACE)
+target_include_directories(poollib INTERFACE ${CMAKE_SOURCE_DIR}/include)
+
 
 # === Main App ===
 add_executable(pool src/main.cpp)
