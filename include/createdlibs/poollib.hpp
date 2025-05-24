@@ -28,6 +28,7 @@ inline std::tm poll_local_time() {
     return local_tm;
 }
 
+// TODO: Should actually return a tuple (flags, job)
 inline std::array<bool, ARG_FLAG_COUNT> loop_and_match_arguments(const char** _command_line_args, int arg_count) {
     std::array<bool, ARG_FLAG_COUNT> flags = {false};
 
