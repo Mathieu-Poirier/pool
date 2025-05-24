@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 
-TEST(SampleTest, BasicAssertions) {
-    EXPECT_EQ(1, 1);
-}
+// TEST(SampleTest, BasicAssertions) {
+//     EXPECT_EQ(1, 1);
+// }
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
